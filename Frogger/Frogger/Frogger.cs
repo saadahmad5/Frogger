@@ -52,15 +52,15 @@ namespace Frogger
         public int pos1 { get; set; }
         Random rand2;
         public int pos2 { get; set; }
+        public score score;
 
-        
 
         public FroggerGame()
         {
             rand1 = new Random();
-            
 
-            
+            score = new score();
+
             drawables = new List<IDrawable>();
 
             frogger = new Frogger();

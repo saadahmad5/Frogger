@@ -28132,24 +28132,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\saada\\.nuget\\packages\\": {},
+    "C:\\Users\\Riyad\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Visual Studio 2017\\Projects\\CIS_297_Game1\\CIS_297_Game1\\Frogger\\Frogger\\Frogger.csproj",
+      "projectUniqueName": "C:\\Users\\Riyad\\Documents\\GitHub\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
       "projectName": "Frogger",
-      "projectPath": "D:\\Documents\\Visual Studio 2017\\Projects\\CIS_297_Game1\\CIS_297_Game1\\Frogger\\Frogger\\Frogger.csproj",
-      "packagesPath": "C:\\Users\\saada\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Visual Studio 2017\\Projects\\CIS_297_Game1\\CIS_297_Game1\\Frogger\\Frogger\\obj\\",
+      "projectPath": "C:\\Users\\Riyad\\Documents\\GitHub\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
+      "packagesPath": "C:\\Users\\Riyad\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Riyad\\Documents\\GitHub\\CIS297_Frogger\\Frogger\\Frogger\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\saada\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Riyad\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

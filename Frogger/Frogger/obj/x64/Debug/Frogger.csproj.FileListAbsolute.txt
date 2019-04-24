@@ -241,3 +241,31 @@ D:\Documents\Visual Studio 2017\Projects\CIS_297_Game1\CIS_297_Game1\Frogger\Fro
 D:\Documents\Visual Studio 2017\Projects\CIS_297_Game1\CIS_297_Game1\Frogger\Frogger\obj\x64\Debug\ProjectArchitectures.txt
 D:\Documents\Visual Studio 2017\Projects\CIS_297_Game1\CIS_297_Game1\Frogger\Frogger\obj\x64\Debug\.winmd_cache\$Microsoft.Graphics.Canvas.winmd_636621993260000000.json
 D:\Documents\Visual Studio 2017\Projects\CIS_297_Game1\CIS_297_Game1\Frogger\Frogger\obj\x64\Debug\.winmd_cache\$Microsoft.UI.Xaml.Markup.winmd_636758696200000000.json
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Frogger.csprojAssemblyReference.cache
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\App.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\App.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\GameOver.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\GameOver.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Credits.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Credits.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Instructions.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Instructions.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\MainPage.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\MainPage.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Main_Page.g.i.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Main_Page.g.cs
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\App.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\GameOver.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Credits.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Instructions.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\MainPage.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Main_Page.xaml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\App.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\GameOver.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Credits.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Instructions.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\MainPage.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Main_Page.xbf
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\XamlSaveStateFile.xml
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Frogger.exe
+C:\Users\Riyad\Documents\GitHub\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\Frogger.pdb
