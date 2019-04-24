@@ -17,6 +17,7 @@ using Microsoft.Graphics.Canvas;
 using System.Threading.Tasks;
 using System.Numerics;
 using Microsoft.Graphics.Canvas.UI;
+using Windows.UI.Core;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -76,9 +77,17 @@ namespace Frogger
 
         }
 
-        private void Canvas_Update(ICanvasAnimatedControl sender, CanvasAnimatedUpdateEventArgs args)
+        private async void Canvas_Update(ICanvasAnimatedControl sender, CanvasAnimatedUpdateEventArgs args)
         {
-            Frogger.Update();
+            if (Frogger.Update() == false)
+            {
+                await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+                {
+                    this.Frame.Navigate(typeof(GameOver));
+
+                });
+
+            };
         }
 
         async Task LoadImages(CanvasDevice device)

@@ -1,0 +1,76 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj": {}
+  },
+  "projects": {
+    "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
+        "projectName": "Frogger",
+        "projectPath": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
+        "packagesPath": "C:\\Users\\Muki\\.nuget\\packages\\",
+        "outputPath": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Muki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "uap10.0.15063"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "uap10.0.15063": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "uap10.0.15063": {
+          "dependencies": {
+            "Microsoft.NETCore.UniversalWindowsPlatform": {
+              "target": "Package",
+              "version": "[6.2.8, )"
+            },
+            "Win2D.uwp": {
+              "target": "Package",
+              "version": "[1.23.0, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win10-arm": {
+          "#import": []
+        },
+        "win10-arm-aot": {
+          "#import": []
+        },
+        "win10-arm64-aot": {
+          "#import": []
+        },
+        "win10-x64": {
+          "#import": []
+        },
+        "win10-x64-aot": {
+          "#import": []
+        },
+        "win10-x86": {
+          "#import": []
+        },
+        "win10-x86-aot": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

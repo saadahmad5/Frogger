@@ -7,6 +7,7 @@ using System.Numerics;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Foundation;
+using Windows.Gaming.Input;
 using Windows.UI;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
@@ -30,6 +31,7 @@ namespace Frogger
         bool ColllidesRightEdge(int x, int y);
         bool CollidesTopEdge(int x, int y);
         bool CoolidesBottomEdge(int x, int y);
+        bool CollidesCar(int x, int y);
     }
 
     // game master class
@@ -52,14 +54,18 @@ namespace Frogger
         public int pos1 { get; set; }
         Random rand2;
         public int pos2 { get; set; }
-        public score score;
+        //public score score;
 
+        public BoundaryCollision Wall_1 { get; private set; }
+        public BoundaryCollision Wall_2 { get; private set; }
 
+        public Gamepad controller;
+        public bool death;
         public FroggerGame()
         {
             rand1 = new Random();
 
-            score = new score();
+            //score = new score();
 
             drawables = new List<IDrawable>();
 
@@ -82,6 +88,11 @@ namespace Frogger
             drawables.Add(Turtles_2);
             drawables.Add(Logs_2);
 
+            Color color = Color.FromArgb(255, 0, 255, 0);
+            Wall_1 = new BoundaryCollision(-128, 64, 704, color);
+            Wall_2 = new BoundaryCollision(512, 64, 704, color);
+            drawables.Add(Wall_1);
+            drawables.Add(Wall_2);
         }
 
         public void viewWater()
@@ -110,6 +121,20 @@ namespace Frogger
 
         public bool Update()
         {
+            foreach (var drawable in drawables)
+            {
+                ICollidable colidiable = drawable as ICollidable;
+                if (colidiable != null)
+                {
+                    if (colidiable.CollidesLeftEdge(frogger.getFroggerClm(), frogger.getFroggerRow()) ||
+                        colidiable.ColllidesRightEdge(frogger.getFroggerClm(), frogger.getFroggerRow()) ||
+                         colidiable.CollidesCar(frogger.getFroggerClm(), frogger.getFroggerRow()))
+                    {
+                        death = false;
+                        return death;
+                    }
+                }
+            }
             car_row_10.Update(car_row_10);
             car_row_9.Update(car_row_9);
             car_row_8.Update(car_row_8);
@@ -200,30 +225,9 @@ namespace Frogger
             return froggerRow++;
         }
 
-        
-
-        //public bool CollidesLeftEdge(int x, int y)
-        //{
-        //    return x == X0 && y >= Y0 && y <= Y1;
-        //}
-
-        //public bool ColllidesRightEdge(int x, int y)
-        //{
-        //    return x == X1 + WIDTH && y >= Y0 && y <= Y1;
-        //}
-
-        //public bool CollidesTopEdge(int x, int y)
-        //{
-        //    return x >= X0 && x <= X1 && y == Y1;
-        //}
-
-        //public bool CoolidesBottomEdge(int x, int y)
-        //{
-        //    return x >= X0 && x <= X1 && y + WIDTH == Y0;
-        //}
     }
 
-    public class Car : IDrawable
+    public class Car : IDrawable, ICollidable
     {
         public static int CAR_WIDTH = 64;
         public static int CAR_HEIGTH = 64;
@@ -363,10 +367,31 @@ namespace Frogger
         {
             return CarColumn++;
         }
+        public bool CollidesLeftEdge(int x, int y)
+        {
+            return false;
+        }
 
+        public bool ColllidesRightEdge(int x, int y)
+        {
+            return false;
+        }
+        public bool CollidesTopEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public bool CoolidesBottomEdge(int x, int y)
+        {
+            return false;
+        }
+        public bool CollidesCar(int x, int y)
+        {
+            return ((x >= GetCarColumn() - 57) && (x <= GetCarColumn() + 57)) && y == GetCarRow();
+        }
     }
 
-    public class WaterObjects : IDrawable
+    public class WaterObjects : IDrawable, ICollidable
     {
         public static int CAR_WIDTH = 64;
         public static int CAR_HEIGTH = 64;
@@ -477,7 +502,76 @@ namespace Frogger
         {
             return WaterColumn++;
         }
+        public bool CollidesCar(int x, int y)
+        {
+            return ((x >= GetWaterColumn() - 57) && (x <= GetWaterColumn() + 57)) && y == GetWaterRow();
+        }
+
+        public bool CollidesLeftEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public bool ColllidesRightEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public bool CollidesTopEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public bool CoolidesBottomEdge(int x, int y)
+        {
+            return false;
+        }
     }
 
+    public class BoundaryCollision : IDrawable, ICollidable
+    {
+        public static int HEIGHT = 64;
+        public static int WIDTH = 704;
+        public int Y0 { get; set; }
+        public int X1 { get; set; }
+        public int Y1 { get; set; }
+        public Color Color { get; set; }
+        public BoundaryCollision(int x1, int y0, int y1, Color color)
+        {
+            X1 = x1;
+            Y0 = y1;
+            Y1 = y1;
+
+        }
+
+        public bool CollidesLeftEdge(int x, int y)
+        {
+            return x == X1 + HEIGHT && y <= Y0 + WIDTH;
+        }
+
+        public bool ColllidesRightEdge(int x, int y)
+        {
+            return x == X1 + HEIGHT && y <= Y0 + WIDTH;
+        }
+        public bool CollidesTopEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public bool CoolidesBottomEdge(int x, int y)
+        {
+            return false;
+        }
+
+        public void Draw(CanvasDrawingSession canvas)
+        {
+            canvas.DrawRectangle(X1, Y0, Y1, HEIGHT, Color);
+        }
+
+        public bool CollidesCar(int x, int y)
+        {
+            return false;
+        }
+    }
 
 }

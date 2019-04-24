@@ -29,12 +29,12 @@ namespace Frogger
 
         private void ReturnToMenu_Click(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(Main_Page));
+            this.Frame.Navigate(typeof(Main_Page));
         }
 
         private void ExitGame_Click(object sender, RoutedEventArgs e)
         {
-            //this.Frame.Navigate(typeof(Credits));
+            this.Frame.Navigate(typeof(Credits));
         }
     }
 }
