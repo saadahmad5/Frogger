@@ -118,7 +118,14 @@ namespace Frogger
             pos2 = rand2.Next(-5, -1);
             car_row_7 = new Car(direction.RIGHT, 7, pos2, 0, 0.05, false);
         }
-
+        public void returnToStart()
+        {
+            if (frogger.froggerRow == 0)
+            {
+                frogger.froggerRow = 11;
+                frogger.froggerClm = 5;
+            }
+        }
         public bool Update()
         {
             foreach (var drawable in drawables)
@@ -156,6 +163,7 @@ namespace Frogger
                 drawable.Draw(canvas);
             }
         }
+        
     }
 
     public enum direction { UP, DOWN, LEFT, RIGHT };
@@ -164,8 +172,8 @@ namespace Frogger
     {
         
         direction froggerDirection;
-        int froggerRow;
-        int froggerClm;
+        public int froggerRow;
+        public int froggerClm;
 
         public Frogger()
         {
