@@ -14,7 +14,7 @@
         <Button x:Name="Credits_Button" Content="CREDITS" Height="118" Margin="0,703,0,0" VerticalAlignment="Top" Width="428" FontWeight="Bold" FontSize="48" HorizontalAlignment="Center" Click="Credits_Button_Click"/>
         <Button x:Name="Instructions_Button" Content="INSTRUCTIONS" Height="118" Margin="0,541,0,0" VerticalAlignment="Top" Width="428" HorizontalAlignment="Center" FontWeight="Bold" FontSize="48" Click="Instructions_Button_Click"/>
         <Image HorizontalAlignment="Left" Height="461" Margin="31,382,0,0" VerticalAlignment="Top" Width="429" Source="/Assets/Frogger_Main_Screen.png"/>
-        <Image HorizontalAlignment="Left" Height="427" Margin="1041,387,0,0" VerticalAlignment="Top" Width="520" Source="/Assets/Frogger_Main_Screen.png" RenderTransformOrigin="0.5,0.5">
+        <Image HorizontalAlignment="Left" Height="427" Margin="1040,382,0,0" VerticalAlignment="Top" Width="477" Source="/Assets/Frogger_Main_Screen.png" RenderTransformOrigin="0.5,0.5">
             <Image.RenderTransform>
                 <CompositeTransform ScaleX="-1"/>
             </Image.RenderTransform>

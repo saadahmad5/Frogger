@@ -23445,12 +23445,11 @@
       ]
     },
     "System.Collections.Immutable/1.2.0": {
-      "sha512": "ACF5WhVfZ/EkfmVy9wpc3oJCK7koh1GlnXQ4WXW9N4ribzY8aKF6Vr56jD0rNTuUzFvRWDbHuYJ/Qnrtrd/7VA==",
+      "sha512": "Cma8cBW6di16ZLibL8LYQ+cLjGzoKxpOTu/faZfDcx94ZjAGq6Nv5RO7+T1YZXqEXTZP9rt1wLVEONVpURtUqw==",
       "type": "package",
       "path": "system.collections.immutable/1.2.0",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/netstandard1.0/System.Collections.Immutable.dll",
@@ -23462,12 +23461,11 @@
       ]
     },
     "System.Collections.NonGeneric/4.0.1": {
-      "sha512": "XDijxhtvTsIFqXB3PbkPztkxnN4ro7kodqLQSg6mOpfWewiJcufYIV0VgO/fG9f79cic6rFfrxuCEtcru8Vz8g==",
+      "sha512": "hMxFT2RhhlffyCdKLDXjx8WEC5JfCvNozAZxCablAuFRH74SCV4AgzE8yJCh/73bFnEoZgJ9MJmkjQ0dJmnKqA==",
       "type": "package",
       "path": "system.collections.nongeneric/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -23501,12 +23499,11 @@
       ]
     },
     "System.Collections.Specialized/4.0.1": {
-      "sha512": "2lTt/6eh+HGLg495oLQoFDvLLy9Wk1FTnCw87CywP+Yq0ITi1PD+p5wgxcyw1Zksu/1dLsQmo3ezO2BGRk67tg==",
+      "sha512": "/HKQyVP0yH1I0YtK7KJL/28snxHNH/bi+0lgk/+MbURF6ULhAE31MDI+NZDerNWu264YbxklXCCygISgm+HMug==",
       "type": "package",
       "path": "system.collections.specialized/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -23540,12 +23537,11 @@
       ]
     },
     "System.ComponentModel/4.0.1": {
-      "sha512": "3AOvy/bB7s8yAkolZOlqGeLDrPySuYsgkk7hKIBWn5a/Le7V16PDYQIzj7w7hi4UUXXmEmN/ZehNlAi5eD9r5w==",
+      "sha512": "oBZFnm7seFiVfugsIyOvQCWobNZs7FzqDV/B7tx20Ep/l3UUFCPDkdTnCNaJZTU27zjeODmy2C/cP60u3D4c9w==",
       "type": "package",
       "path": "system.componentmodel/4.0.1",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -23678,12 +23674,11 @@
       ]
     },
     "System.ComponentModel.EventBasedAsync/4.0.11": {
-      "sha512": "uFA+3r3rVTW+XRXIOQky8x6NvdUj9bmliaZJdojDHcwt+lMq55EpYxNLHlnOwzS3kmIwv674WCRnHOZBAYmKiQ==",
+      "sha512": "Z7SO6vvQIR84daPE4uhaNdef9CjgjDMGYkas8epUhf0U3WGuaGgZ0Mm4QuNycMdbHUY8KEdZrtgxonkAiJaAlA==",
       "type": "package",
       "path": "system.componentmodel.eventbasedasync/4.0.11",
       "files": [
         ".nupkg.metadata",
-        ".signature.p7s",
         "ThirdPartyNotices.txt",
         "dotnet_library_license.txt",
         "lib/MonoAndroid10/_._",
@@ -28130,24 +28125,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Muki\\.nuget\\packages\\": {},
+    "C:\\Users\\jakob\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
+      "projectUniqueName": "C:\\Users\\jakob\\git\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
       "projectName": "Frogger",
-      "projectPath": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
-      "packagesPath": "C:\\Users\\Muki\\.nuget\\packages\\",
-      "outputPath": "D:\\Muki\\Documents\\College\\CIS 297\\CIS_GIT_REPO\\CIS297_Frogger\\Frogger\\Frogger\\obj\\",
+      "projectPath": "C:\\Users\\jakob\\git\\CIS297_Frogger\\Frogger\\Frogger\\Frogger.csproj",
+      "packagesPath": "C:\\Users\\jakob\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\jakob\\git\\CIS297_Frogger\\Frogger\\Frogger\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\Muki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\jakob\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

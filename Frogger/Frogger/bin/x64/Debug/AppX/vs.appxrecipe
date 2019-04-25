@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
-    <Machine>LAPTOP-7R3RAHRG</Machine>
-    <WindowsUser>Muki</WindowsUser>
+    <Machine>JAKOBLAPTOP</Machine>
+    <WindowsUser>jakob</WindowsUser>
     <TargetPlatformIdentifier>UAP</TargetPlatformIdentifier>
     <TargetOsVersion>10.0</TargetOsVersion>
     <TargetOsDescription>Windows 10.0</TargetOsDescription>
@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>a2f61c6d-3114-4cd6-bac4-a148511717f4</PackageIdentityName>
     <PackageIdentityPublisher>CN=Jakob</PackageIdentityPublisher>
-    <IntermediateOutputPath>D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>318E85FE3B48336779E0A3CF101BD3665DE3EB175C68745BA6FE9EC6258154F1</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>a2f61c6d-3114-4cd6-bac4-a148511717f4_1.0.0.0_x64__3g48n4wt4v0gg</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>a2f61c6d-3114-4cd6-bac4-a148511717f4_3g48n4wt4v0gg!App</RegisteredUserModeAppID>
@@ -27,16 +27,16 @@
     <RegisteredVersion>1.0.0.0</RegisteredVersion>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T19:09:37.291</Modified>
+      <Modified>2019-04-25T15:20:31.423</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Frogger.exe">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Frogger.exe">
       <PackagePath>entrypoint\Frogger.exe</PackagePath>
-      <Modified>2019-04-24T19:09:36.224</Modified>
+      <Modified>2019-04-25T15:20:30.142</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -210,19 +210,19 @@
       <PackagePath>System.Collections.Concurrent.dll</PackagePath>
       <Modified>2016-06-12T03:13:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.collections.immutable\1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.collections.immutable\1.2.0\lib\portable-net45+win8+wp8+wpa81\System.Collections.Immutable.dll">
       <PackagePath>System.Collections.Immutable.dll</PackagePath>
       <Modified>2016-06-12T03:13:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.collections.nongeneric\4.0.1\lib\netstandard1.3\System.Collections.NonGeneric.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.collections.nongeneric\4.0.1\lib\netstandard1.3\System.Collections.NonGeneric.dll">
       <PackagePath>System.Collections.NonGeneric.dll</PackagePath>
       <Modified>2016-06-12T03:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.collections.specialized\4.0.1\lib\netstandard1.3\System.Collections.Specialized.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.collections.specialized\4.0.1\lib\netstandard1.3\System.Collections.Specialized.dll">
       <PackagePath>System.Collections.Specialized.dll</PackagePath>
       <Modified>2016-06-12T03:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.componentmodel\4.0.1\lib\netcore50\System.ComponentModel.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.componentmodel\4.0.1\lib\netcore50\System.ComponentModel.dll">
       <PackagePath>System.ComponentModel.dll</PackagePath>
       <Modified>2016-06-12T03:13:24.000</Modified>
     </AppxPackagedFile>
@@ -230,7 +230,7 @@
       <PackagePath>System.ComponentModel.Annotations.dll</PackagePath>
       <Modified>2016-06-12T03:13:22.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.componentmodel.eventbasedasync\4.0.11\lib\netcore50\System.ComponentModel.EventBasedAsync.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.componentmodel.eventbasedasync\4.0.11\lib\netcore50\System.ComponentModel.EventBasedAsync.dll">
       <PackagePath>System.ComponentModel.EventBasedAsync.dll</PackagePath>
       <Modified>2016-06-12T03:13:20.000</Modified>
     </AppxPackagedFile>
@@ -366,7 +366,7 @@
       <PackagePath>System.Reflection.Emit.Lightweight.dll</PackagePath>
       <Modified>2016-06-12T03:14:16.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\system.reflection.metadata\1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll">
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\system.reflection.metadata\1.3.0\lib\portable-net45+win8\System.Reflection.Metadata.dll">
       <PackagePath>System.Reflection.Metadata.dll</PackagePath>
       <Modified>2016-06-12T03:14:14.000</Modified>
     </AppxPackagedFile>
@@ -494,151 +494,151 @@
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
       <Modified>2016-06-12T03:15:04.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
+    <AppxPackagedFile Include="C:\Users\jakob\.nuget\packages\win2d.uwp\1.23.0\runtimes\win10-x64\native\Microsoft.Graphics.Canvas.dll">
       <PackagePath>Microsoft.Graphics.Canvas.dll</PackagePath>
       <Modified>2018-05-18T00:17:14.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Muki\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
+    <AppxPackagedFile Include="C:\Users\jakob\.nuget\packages\win2d.uwp\1.23.0\lib\uap10.0\Microsoft.Graphics.Canvas.winmd">
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2018-05-18T00:15:26.000</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\bin\10.0.17763.0\XamlCompiler\Microsoft.UI.Xaml.Markup.winmd">
       <PackagePath>Microsoft.UI.Xaml.Markup.winmd</PackagePath>
-      <Modified>2018-10-23T05:33:40.000</Modified>
+      <Modified>2018-10-23T06:33:40.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Car.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Car.png">
       <PackagePath>Assets\Car.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.738</Modified>
+      <Modified>2019-04-24T19:56:25.309</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger-1.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger-1.png">
       <PackagePath>Assets\Frogger-1.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.741</Modified>
+      <Modified>2019-04-24T19:56:25.316</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Down.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Down.png">
       <PackagePath>Assets\Frogger_Down.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.742</Modified>
+      <Modified>2019-04-24T19:56:25.321</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Left.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Left.png">
       <PackagePath>Assets\Frogger_Left.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.744</Modified>
+      <Modified>2019-04-24T19:56:25.349</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\frogger_logo.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\frogger_logo.png">
       <PackagePath>Assets\frogger_logo.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.805</Modified>
+      <Modified>2019-04-24T19:56:25.489</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Main_Screen.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Main_Screen.png">
       <PackagePath>Assets\Frogger_Main_Screen.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.747</Modified>
+      <Modified>2019-04-24T19:56:25.358</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Right.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Right.png">
       <PackagePath>Assets\Frogger_Right.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.750</Modified>
+      <Modified>2019-04-24T19:56:25.363</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Up.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Frogger_Up.png">
       <PackagePath>Assets\Frogger_Up.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.751</Modified>
+      <Modified>2019-04-24T19:56:25.369</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\kisspng-frogger-helmet-chaos-video-games-arcade-game-kona-contest-closed-win-5c54974bd421b3.4373159515490476278689.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\kisspng-frogger-helmet-chaos-video-games-arcade-game-kona-contest-closed-win-5c54974bd421b3.4373159515490476278689.png">
       <PackagePath>Assets\kisspng-frogger-helmet-chaos-video-games-arcade-game-kona-contest-closed-win-5c54974bd421b3.4373159515490476278689.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.808</Modified>
+      <Modified>2019-04-24T19:56:25.517</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Log.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Log.png">
       <PackagePath>Assets\Log.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.755</Modified>
+      <Modified>2019-04-24T19:56:25.379</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Map.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Map.png">
       <PackagePath>Assets\Map.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.756</Modified>
+      <Modified>2019-04-24T19:56:25.384</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Race_Car.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Race_Car.png">
       <PackagePath>Assets\Race_Car.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.758</Modified>
+      <Modified>2019-04-24T19:56:25.390</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Turtle.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Turtle.png">
       <PackagePath>Assets\Turtle.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.769</Modified>
+      <Modified>2019-04-24T19:56:25.423</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\you_died.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\you_died.png">
       <PackagePath>Assets\you_died.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.814</Modified>
+      <Modified>2019-04-24T19:56:25.533</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
-      <Modified>2019-04-24T18:25:19.753</Modified>
+      <Modified>2019-04-24T19:56:25.374</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.760</Modified>
+      <Modified>2019-04-24T19:56:25.396</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.762</Modified>
+      <Modified>2019-04-24T19:56:25.401</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.763</Modified>
+      <Modified>2019-04-24T19:56:25.407</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.765</Modified>
+      <Modified>2019-04-24T19:56:25.412</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\StoreLogo.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\StoreLogo.png">
       <PackagePath>Assets\StoreLogo.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.767</Modified>
+      <Modified>2019-04-24T19:56:25.417</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-04-24T18:25:19.771</Modified>
+      <Modified>2019-04-24T19:56:25.428</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
-      <Modified>2019-04-24T18:25:19.844</Modified>
+      <Modified>2019-04-24T19:56:25.627</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Frogger.xr.xml">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Frogger.xr.xml">
       <PackagePath>Frogger.xr.xml</PackagePath>
-      <Modified>2019-04-24T18:25:22.690</Modified>
+      <Modified>2019-04-24T19:56:26.956</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\App.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.597</Modified>
+      <Modified>2019-04-25T15:20:29.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\GameOver.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\GameOver.xbf">
       <PackagePath>GameOver.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.598</Modified>
+      <Modified>2019-04-25T15:20:29.724</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Credits.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Credits.xbf">
       <PackagePath>Credits.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.599</Modified>
+      <Modified>2019-04-25T15:20:29.725</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Instructions.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Instructions.xbf">
       <PackagePath>Instructions.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.600</Modified>
+      <Modified>2019-04-25T15:20:29.718</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\MainPage.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.602</Modified>
+      <Modified>2019-04-25T15:20:29.726</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Main_Page.xbf">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Main_Page.xbf">
       <PackagePath>Main_Page.xbf</PackagePath>
-      <Modified>2019-04-24T19:09:35.603</Modified>
+      <Modified>2019-04-25T15:20:29.727</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17763.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
-      <Modified>2018-10-23T04:44:28.000</Modified>
+      <Modified>2018-10-23T05:44:28.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2019-04-24T18:51:16.898</Modified>
+      <Modified>2019-04-24T20:00:06.197</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="D:\Muki\Documents\College\CIS 297\CIS_GIT_REPO\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Core\Frogger.exe">
+    <AppxPackagedFile Include="C:\Users\jakob\git\CIS297_Frogger\Frogger\Frogger\bin\x64\Debug\Core\Frogger.exe">
       <PackagePath>Frogger.exe</PackagePath>
-      <Modified>2019-04-24T19:09:37.273</Modified>
+      <Modified>2019-04-25T15:20:31.384</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
