@@ -150,6 +150,7 @@
     <Content Include="Assets\frogger-hop.wav" />
     <Content Include="Assets\Frogger_Down.png" />
     <Content Include="Assets\Frogger_Left.png" />
+    <Content Include="Assets\Frogger_Level_Music.wav" />
     <Content Include="Assets\frogger_logo.png" />
     <Content Include="Assets\Frogger_Main_Screen.png" />
     <Content Include="Assets\Frogger_Right.png" />

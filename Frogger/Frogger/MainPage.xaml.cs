@@ -46,6 +46,7 @@ namespace Frogger
         CanvasBitmap Turtle;
 
         MediaPlayer froggerHop;
+        //MediaPlayer LevelMusic;
 
         public MainPage()
         {
@@ -53,7 +54,6 @@ namespace Frogger
             Frogger = new FroggerGame();
             Window.Current.CoreWindow.KeyDown += Canvas_KeyDown;
             Window.Current.CoreWindow.KeyUp += Canvas_KeyUp;
-
         }
 
         private void playSound()
@@ -64,6 +64,15 @@ namespace Frogger
             froggerHop.Source = MediaSource.CreateFromUri(file);
            froggerHop.Play();
         }
+
+        //private void playLevelMusic()
+        //{
+        //    LevelMusic = new MediaPlayer();
+        //    string path = "ms-appx:///Assets/Frogger_Level_Music.wav";
+        //    var file = new Uri(path);
+        //    LevelMusic.Source = MediaSource.CreateFromUri(file);
+        //    LevelMusic.Play();
+        //}
 
         private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
         {
