@@ -147,6 +147,7 @@
   <ItemGroup>
     <Content Include="Assets\Car.png" />
     <Content Include="Assets\Frogger-1.png" />
+    <Content Include="Assets\frogger-hop.wav" />
     <Content Include="Assets\Frogger_Down.png" />
     <Content Include="Assets\Frogger_Left.png" />
     <Content Include="Assets\frogger_logo.png" />

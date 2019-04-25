@@ -19,6 +19,8 @@ using System.Numerics;
 using Microsoft.Graphics.Canvas.UI;
 using Windows.UI.Core;
 using Windows.UI;
+using Windows.Media.Playback;
+using Windows.Media.Core;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -43,6 +45,8 @@ namespace Frogger
         CanvasBitmap Log;
         CanvasBitmap Turtle;
 
+        MediaPlayer froggerHop;
+
         public MainPage()
         {
             this.InitializeComponent();
@@ -50,6 +54,15 @@ namespace Frogger
             Window.Current.CoreWindow.KeyDown += Canvas_KeyDown;
             Window.Current.CoreWindow.KeyUp += Canvas_KeyUp;
 
+        }
+
+        private void playSound()
+        {
+            froggerHop = new MediaPlayer();
+            string path = "ms-appx:///Assets/frogger-hop.wav";
+            var file = new Uri(path);
+            froggerHop.Source = MediaSource.CreateFromUri(file);
+           froggerHop.Play();
         }
 
         private void Canvas_Draw(ICanvasAnimatedControl sender, CanvasAnimatedDrawEventArgs args)
@@ -124,18 +137,22 @@ namespace Frogger
             if (e.VirtualKey == Windows.System.VirtualKey.Left || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadLeft)
             {
                 Frogger.frogger.FroggerLeft();
+                playSound();
             }
             else if (e.VirtualKey == Windows.System.VirtualKey.Right || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadRight)
             {
                 Frogger.frogger.FroggerRight();
+                playSound();
             }
             else if (e.VirtualKey == Windows.System.VirtualKey.Up || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadUp)
             {
                 Frogger.frogger.FroggerUp();
+                playSound();
             }
             else if (e.VirtualKey == Windows.System.VirtualKey.Down || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadDown)
             {
                 Frogger.frogger.FroggerDown();
+                playSound();
             }
             
             else if(e.VirtualKey == Windows.System.VirtualKey.U)
