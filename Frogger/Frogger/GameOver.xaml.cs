@@ -36,5 +36,15 @@ namespace Frogger
         {
             this.Frame.Navigate(typeof(Credits));
         }
+
+        public void ShowScore(score score)
+        {
+            score displayScore = score;
+            Canvas canvas = new Canvas();
+            TextBlock text = new TextBlock();
+            text.Text = $"SCORE: {displayScore.Score}";
+            Canvas.SetTop(text, 300);
+            Canvas.SetLeft(text, 200);
+        }
     }
 }

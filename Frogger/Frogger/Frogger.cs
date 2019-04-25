@@ -19,7 +19,7 @@ using Windows.UI.Xaml.Media.Imaging;
 
 namespace Frogger
 {
-    
+
     public interface IDrawable
     {
         void Draw(CanvasDrawingSession canvas);
@@ -38,11 +38,13 @@ namespace Frogger
     public class FroggerGame
     {
         public Frogger frogger { get; private set; }
-        
+        public score score { get; set; }
         public Car car_row_10 { get; private set; }
         public Car car_row_9 { get; private set; }
         public Car car_row_8 { get; private set; }
         public Car car_row_7 { get; private set; }
+
+        public TextBlock Text { get; set; }
 
         public WaterObjects Turtles_1 { get; private set; }
         public WaterObjects Logs_1 { get; private set; }
@@ -54,7 +56,6 @@ namespace Frogger
         public int pos1 { get; set; }
         Random rand2;
         public int pos2 { get; set; }
-        //public score score;
 
         public BoundaryCollision Wall_1 { get; private set; }
         public BoundaryCollision Wall_2 { get; private set; }
@@ -65,18 +66,19 @@ namespace Frogger
         {
             rand1 = new Random();
 
-            //score = new score();
+            score = new score();
 
             drawables = new List<IDrawable>();
 
             frogger = new Frogger();
             drawables.Add(frogger);
             rand2 = new Random();
-            
+            Text = new TextBlock();
+
 
             viewCars();
             viewWater();
-            
+
 
             drawables.Add(car_row_10);
             drawables.Add(car_row_9);
@@ -128,6 +130,40 @@ namespace Frogger
         }
         public bool Update()
         {
+            //if (Gamepad.Gamepads.Count > 0)
+            //{
+            //    controller = Gamepad.Gamepads.First();
+            //    var reading = controller.GetCurrentReading();
+                
+            //    if (reading.Buttons == GamepadButtons.DPadLeft)
+            //    {
+            //        frogger.froggerClm--;
+            //        reading.Equals(null);
+            //    }
+            //    else if (reading.Buttons == GamepadButtons.DPadRight)
+            //    {
+            //        frogger.froggerClm++;
+            //        reading.Equals(null);
+
+
+            //    }
+            //    else if (reading.Buttons == GamepadButtons.DPadUp)
+            //    {
+            //        frogger.froggerRow--;
+            //        reading.Equals(null);
+
+
+            //    }
+            //    else if (reading.Buttons == GamepadButtons.DPadDown)
+            //    {
+            //        frogger.froggerRow++;
+            //        reading.Equals(null);
+
+
+            //    }
+            //}
+
+
             foreach (var drawable in drawables)
             {
                 ICollidable colidiable = drawable as ICollidable;
@@ -153,6 +189,7 @@ namespace Frogger
             Logs_2.Update(Logs_2);
 
             return true;
+
         }
 
 
@@ -161,25 +198,32 @@ namespace Frogger
             foreach (var drawable in drawables)
             {
                 drawable.Draw(canvas);
+
+
             }
+
+
         }
-        
+
     }
 
     public enum direction { UP, DOWN, LEFT, RIGHT };
 
     public class Frogger : IDrawable
     {
-        
+
         direction froggerDirection;
         public int froggerRow;
         public int froggerClm;
+        public score score { get; set; }
+
 
         public Frogger()
         {
             froggerDirection = direction.UP;
             froggerRow = 11;
             froggerClm = 5;
+            score = new score();
 
         }
 
@@ -225,12 +269,16 @@ namespace Frogger
         public int FroggerUp()
         {
             froggerDirection = direction.UP;
-            return froggerRow--;
+            froggerRow--;
+            score.SetScore(this);
+            return froggerRow;
         }
         public int FroggerDown()
         {
             froggerDirection = direction.DOWN;
-            return froggerRow++;
+            froggerRow++;
+            score.LowerScore(this);
+            return froggerRow;
         }
 
     }
@@ -268,7 +316,7 @@ namespace Frogger
             Color color = new Color();
 
             if (TravellingLeftward)
-            {                
+            {
                 color.R = 51;
                 color.B = 255;
                 color.G = 51;
@@ -281,7 +329,7 @@ namespace Frogger
                 color.G = 0;
                 color.A = 255;
             }
-            
+
             Rect rect = new Rect(GetCarColumn(), GetCarRow(), CAR_WIDTH, CAR_HEIGTH);
             canvas.FillRectangle(rect, color);
             canvas.DrawRectangle(rect, color);
@@ -295,13 +343,13 @@ namespace Frogger
             {
                 CarColumn -= Speed;
             }
-           
+
             if (!TravellingLeftward)
             {
                 CarColumn += Speed;
             }
-            
-            if ((CarColumn <= 0) && TravellingLeftward && car.CarRow==10)
+
+            if ((CarColumn <= 0) && TravellingLeftward && car.CarRow == 10)
             {
                 Random rand = new Random();
                 int pos = rand.Next(10, 14);
@@ -319,13 +367,13 @@ namespace Frogger
                 car.CarColumn = pos;
                 car.Speed = (rand.Next(1, 4)) / 100.0;
                 //FOR INSANE MODE CHEAT
-                if(cheat)
+                if (cheat)
                     car.Speed = (rand.Next(40, 100)) / 100.0;
                 else
                     car.Speed = (rand.Next(1, 4)) / 100.0;
 
             }
-            if ((CarColumn >= 10) && !TravellingLeftward && car.CarRow==9)
+            if ((CarColumn >= 10) && !TravellingLeftward && car.CarRow == 9)
             {
                 Random rand = new Random();
                 int pos = rand.Next(-5, -1);
@@ -428,12 +476,12 @@ namespace Frogger
             color.B = 0;
             color.G = 51;
             color.A = 255;
-            Rect rect = new Rect(GetWaterColumn(), GetWaterRow(), CAR_WIDTH, CAR_HEIGTH);            
-            canvas.FillRectangle(rect, color);            
-            canvas.DrawRectangle(rect, color);            
+            Rect rect = new Rect(GetWaterColumn(), GetWaterRow(), CAR_WIDTH, CAR_HEIGTH);
+            canvas.FillRectangle(rect, color);
+            canvas.DrawRectangle(rect, color);
 
             //canvas.DrawRectangle(8*64, 10*64, 64, 64, Colors.Red);        
-            
+
         }
 
         public void Update(WaterObjects wo)

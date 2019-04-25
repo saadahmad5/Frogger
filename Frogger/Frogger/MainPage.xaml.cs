@@ -18,6 +18,7 @@ using System.Threading.Tasks;
 using System.Numerics;
 using Microsoft.Graphics.Canvas.UI;
 using Windows.UI.Core;
+using Windows.UI;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -73,7 +74,11 @@ namespace Frogger
                     sb.Draw(FrogL, new Vector2((float)Frogger.frogger.getFroggerClm(), (float)Frogger.frogger.getFroggerRow()));
                 else if (Frogger.frogger.getFroggerDirection() == direction.RIGHT)
                     sb.Draw(FrogR, new Vector2((float)Frogger.frogger.getFroggerClm(), (float)Frogger.frogger.getFroggerRow()));
+               
             }
+
+            args.DrawingSession.DrawText(Frogger.frogger.score.Score.ToString(), new Vector2(0, 0), new Color { A = 255, B = 0, G = 0, R = 0 });
+
 
         }
 
@@ -84,11 +89,14 @@ namespace Frogger
             {
                 await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
                 {
-                    this.Frame.Navigate(typeof(GameOver));
+                    this.Frame.Navigate(typeof(GameOver), Frogger.frogger.score.Score);
 
                 });
 
             };
+
+
+           
         }
 
         async Task LoadImages(CanvasDevice device)
@@ -111,23 +119,25 @@ namespace Frogger
 
         
         private void Canvas_KeyDown(Windows.UI.Core.CoreWindow sender, Windows.UI.Core.KeyEventArgs e)
-        {
-            if (e.VirtualKey == Windows.System.VirtualKey.Left)
+        {           
+
+            if (e.VirtualKey == Windows.System.VirtualKey.Left || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadLeft)
             {
                 Frogger.frogger.FroggerLeft();
             }
-            else if (e.VirtualKey == Windows.System.VirtualKey.Right)
+            else if (e.VirtualKey == Windows.System.VirtualKey.Right || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadRight)
             {
                 Frogger.frogger.FroggerRight();
             }
-            else if (e.VirtualKey == Windows.System.VirtualKey.Up)
+            else if (e.VirtualKey == Windows.System.VirtualKey.Up || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadUp)
             {
                 Frogger.frogger.FroggerUp();
             }
-            else if (e.VirtualKey == Windows.System.VirtualKey.Down)
+            else if (e.VirtualKey == Windows.System.VirtualKey.Down || e.VirtualKey == Windows.System.VirtualKey.GamepadDPadDown)
             {
                 Frogger.frogger.FroggerDown();
             }
+            
             else if(e.VirtualKey == Windows.System.VirtualKey.U)
             {
                 Frogger.car_row_10.EnableCheats();

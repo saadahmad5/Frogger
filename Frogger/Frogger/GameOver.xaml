@@ -12,7 +12,7 @@
 
     <Grid FocusVisualPrimaryBrush="#FF710303" Background="Black">
         <Image x:Name="You_Died" HorizontalAlignment="Center" Height="140" Margin="0,101,0,0" VerticalAlignment="Top" Width="576" Source="/Assets/you_died.png" Stretch="Fill"/>
-        <Button x:Name="returnToMenu" Content="Return to Menu" Margin="0,459,0,0" VerticalAlignment="Top" Height="59" Width="146" HorizontalAlignment="Center" Background="#33199312" Click="ReturnToMenu_Click">
+        <Button x:Name="returnToMenu" Content="Return to Menu" Margin="0,298,0,0" VerticalAlignment="Top" Height="59" Width="146" HorizontalAlignment="Center" Background="#33199312" Click="ReturnToMenu_Click">
             <Button.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -20,7 +20,7 @@
                 </LinearGradientBrush>
             </Button.Foreground>
         </Button>
-        <Button x:Name="creditsScreen" Content="Credits" Margin="0,559,0,0" VerticalAlignment="Top" Height="59" Width="146" HorizontalAlignment="Center" Background="#33199312" Click="ExitGame_Click">
+        <Button x:Name="creditsScreen" Content="Credits" Margin="0,398,0,0" VerticalAlignment="Top" Height="59" Width="146" HorizontalAlignment="Center" Background="#33199312" Click="ExitGame_Click">
             <Button.Foreground>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="Black"/>
@@ -28,7 +28,6 @@
                 </LinearGradientBrush>
             </Button.Foreground>
         </Button>
-        <TextBlock x:Name="highScore" HorizontalAlignment="Center" Text="Highscore: " TextWrapping="Wrap" VerticalAlignment="Center" Height="34" Width="344" FontSize="28" Foreground="#FF880707"/>
 
     </Grid>
 </Page>
