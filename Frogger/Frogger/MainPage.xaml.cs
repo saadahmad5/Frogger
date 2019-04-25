@@ -79,6 +79,7 @@ namespace Frogger
 
         private async void Canvas_Update(ICanvasAnimatedControl sender, CanvasAnimatedUpdateEventArgs args)
         {
+            Frogger.returnToStart();
             if (Frogger.Update() == false)
             {
                 await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
@@ -168,6 +169,7 @@ namespace Frogger
             return Frogger.frogger.getFroggerClm();
         }
 
+       
         private void Canvas_Loaded(object sender, RoutedEventArgs e)
         {
 
