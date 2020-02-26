@@ -1,2 +1,2 @@
 language: csharp
-solution: Frogger.sln
+solution: "./Frogger/Frogger.sln"
